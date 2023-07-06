@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: black;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: onlyFont;
+    src: url(font.woff2);
+}
+
+/* WRAPPER */
+/* WRAPPER */
+/* WRAPPER */
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTON */
+/* BUTTON */
+/* BUTTON */
+
+.whole-button button {
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    padding: 8px 8px 8px 16px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.text {
+    overflow: hidden;
+    height: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text p {
+    color: white;
+    text-transform: uppercase;
+    font-family: onlyfont;
+    font-weight: 200;
+    font-size: 0.835rem;
+}
+
+.text-one {
+    /* OD 1PX DO -15PX */
+    margin-bottom: -2px;
+    transition: 300ms;
+}
+
+.circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-right: 6px;
+}
+
+.whole-button:hover .text-one {
+    margin-top: -16px;
+    transition: 300ms;
+}
+
+.whole-button:hover .arrow-one {
+    margin-left: 33px;
+    transition: 300ms;
+}
+
+.circle i {
+    font-size: 1.3rem;
+    margin-top: 1px;
+    color: black;
+}
+
+.arrow-one {
+    margin-right: 10px;
+    /* OD -22 DO +33 */
+    margin-left: -22px;
+    transition: 300ms;
+}
+
